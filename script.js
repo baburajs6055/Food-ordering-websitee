@@ -10,7 +10,7 @@ const PRODUCTS = [
         name: "Classic Burger",
         price: 120,
         category: "Fast Food",
-        image: "images/burger.jpg",
+        image: "burger.jpg",
         description: "Juicy burger with fresh vegetables."
     },
 
@@ -19,7 +19,7 @@ const PRODUCTS = [
         name: "Cheese Pizza",
         price: 250,
         category: "Fast Food",
-        image: "images/pizza.jpg",
+        image: "pizza.jpg",
         description: "Cheesy pizza with delicious toppings."
     },
 
@@ -28,7 +28,7 @@ const PRODUCTS = [
         name: "French Fries",
         price: 80,
         category: "Sides",
-        image: "images/fries.jpg",
+        image: "fries.jpg",
         description: "Crispy golden potato fries."
     },
 
@@ -37,7 +37,7 @@ const PRODUCTS = [
         name: "Chicken Sandwich",
         price: 140,
         category: "Fast Food",
-        image: "images/sandwich.jpg",
+        image: "sandwich.jpg",
         description: "Fresh sandwich with tasty filling."
     },
 
@@ -46,7 +46,7 @@ const PRODUCTS = [
         name: "Cold Drink",
         price: 50,
         category: "Drinks",
-        image: "images/drink.jpg",
+        image: "drink.jpg",
         description: "A chilled refreshing drink."
     },
 
@@ -55,7 +55,7 @@ const PRODUCTS = [
         name: "Chocolate Shake",
         price: 110,
         category: "Drinks",
-        image: "images/shake.jpg",
+        image: "shake.jpg",
         description: "Creamy chocolate milkshake."
     }
 
