@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuickBite | Food Ordering</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="brand">
+        🍔 QuickBite
+    </div>
+
+    <button class="cart-open" id="cartOpen">
+        🛒 Cart
+        <span id="cartCount">0</span>
+    </button>
+
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="tag">DELICIOUS FOOD, FAST DELIVERY</span>
+
+        <h1>
+            Fresh Food.<br>
+            Happy Moments.
+        </h1>
+
+        <p>
+            Order your favourite food and enjoy
+            delicious moments with QuickBite.
+        </p>
+
+        <a href="#menu" class="hero-btn">
+            Order Now
+        </a>
+
+    </div>
+
+    <div class="hero-art">
+        <div class="food-circle">🍔</div>
+        <span class="floating f1">🍕</span>
+        <span class="floating f2">🍟</span>
+        <span class="floating f3">🥤</span>
+    </div>
+
+</section>
+
+
+<!-- FOOD MENU -->
+
+<section class="menu-section" id="menu">
+
+    <div class="section-heading">
+
+        <span>OUR MENU</span>
+
+        <h2>Explore Our Food</h2>
+
+        <p>Choose your favourite and add it to your cart.</p>
+
+    </div>
+
+    <div class="categories" id="categories"></div>
+
+    <div class="products" id="products"></div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>🍔 QuickBite</h2>
+
+    <p>Good Food. Good Mood.</p>
+
+    <p>© <span id="year"></span> QuickBite. All rights reserved.</p>
+
+</footer>
+
+
+<!-- CART OVERLAY -->
+
+<div class="overlay" id="overlay"></div>
+
+
+<!-- CART DRAWER -->
+
+<aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+
+        <h2>Your Cart</h2>
+
+        <button id="cartClose">✕</button>
+
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+
+        <div class="total-row">
+
+            <strong>Total</strong>
+
+            <strong id="cartTotal">₹0</strong>
+
+        </div>
+
+        <button class="checkout-btn" id="checkoutBtn">
+            Proceed to Checkout
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- CHECKOUT FORM -->
+
+<div class="checkout-backdrop" id="checkoutBackdrop">
+
+    <div class="checkout-box">
+
+        <div class="checkout-header">
+
+            <h2>Checkout</h2>
+
+            <button id="checkoutClose">✕</button>
+
+        </div>
+
+        <p>Enter your details to place your order.</p>
+
+        <form id="checkoutForm">
+
+            <label for="customerName">Full Name</label>
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="customerPhone">Phone Number</label>
+
+            <input
+                type="tel"
+                id="customerPhone"
+                placeholder="Enter your phone number"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                required
+            >
+
+            <label for="customerAddress">Delivery Address</label>
+
+            <textarea
+                id="customerAddress"
+                placeholder="Enter your delivery address"
+                required
+            ></textarea>
+
+            <label for="orderNote">Additional Note (Optional)</label>
+
+            <textarea
+                id="orderNote"
+                placeholder="Any special instructions?"
+            ></textarea>
+
+            <button type="submit" class="whatsapp-btn">
+                Order Through WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
